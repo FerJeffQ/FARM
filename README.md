@@ -1,6 +1,8 @@
 # FARM
 Project about FastAPI React MongoDb
 
+## Para BACKEND
+
 ### Base de datos
 ```
 docker-compose up -d
@@ -61,4 +63,35 @@ requirements.txt: Este archivo lista todas las dependencias de Python que tu pro
 Ejecutar desde Backend:
 ```
 uvicorn app.main:app --reload
+```
+
+## para el FRONTEND
+### utilizando vite
+```
+npm create vite
+cd frontend
+npm i react-router-dom
+npm i axios
+```
+Estilizar
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+tailwind.config
+```/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+index.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
