@@ -62,3 +62,7 @@ Ejecutar desde Backend:
 ```
 uvicorn app.main:app --reload
 ```
+Ejecutar el servidor:
+```
+uvicorn app.main:app --reload
+```

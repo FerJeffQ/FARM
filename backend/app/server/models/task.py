@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class BaseTaskModel(BaseModel):
@@ -21,4 +22,5 @@ class TaskSchema(BaseTaskModel):
 
 
 class UpdateTaskModel(BaseTaskModel):
-    pass
+    title: Optional[str] = None
+    description: Optional[str] = None
